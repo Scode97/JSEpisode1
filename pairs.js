@@ -18,7 +18,56 @@
 *       pairs() returns []
 ****************************************************************/
 function pairs(names) {
-  // Your code goes here
+  //do this first return [] and u will pass two tests
+    if(names === undefined)
+    {
+    // or if(!names)
+      return [];
+    }
+    if (names.length === 0)
+    {
+      return [];
+    }
+    /*  OR
+    if(!names || !names.length)
+    return [];
+    */
+
+    const pairings = [];
+
+    while (names.length > 1)
+    {
+      //pairingss.push([names.pop(), names.pop()])
+      pairings.push([names.getRandom(), names.getRandom()])
+
+
+    }
+if(names.length){
+  pairings.push(names);
+
+}
+return pairings;
+
+  //if(names.length === 2)
+    //  {
+    //    let x = names.getRandom();
+    //    let y = names.getRandom();
+    //    return [[x,y]];
+  //  }
+    // return [[names.getRandom(), names.getRandom()]]; and u will pass test num 3
+
+//  if()
+
+  //  }
+
+
+    //else {
+      //return names.getRandom();
+  //  }
+
+
+
+
 }
 
 module.exports = pairs;
